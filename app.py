@@ -119,9 +119,9 @@ if st.session_state.step < total_questions:
         
         if st.session_state.show_feedback:
             if st.session_state.last_correct:
-                st.success("🎉 Boom! Sahi Jawab!")
+                st.success("🎉 Boom!correct!")
             else:
-                st.error(f"⏰ Time Out ya Galat Jawab! Sahi answer tha: **{st.session_state.correct_ans_text}**")
+                st.error(f"⏰ Time Out or wrong answer! Right answer: **{st.session_state.correct_ans_text}**")
                 
             if st.button("Next Level ➔"):
                 st.session_state.show_feedback = False
